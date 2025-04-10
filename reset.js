@@ -14,12 +14,6 @@ ws.on('message', (message) => {
     ws.close();
 });
 
-// Handle any error that occurs
-ws.on('error', (error) => {
-    console.error('Error:', error);
-});
-
-// When the WebSocket connection is closed
 ws.on('close', () => {
     console.log('Connection closed');
 });
